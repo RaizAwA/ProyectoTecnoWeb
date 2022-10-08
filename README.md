@@ -6,3 +6,4 @@ Integrantes:
 -Angel Alarcón
 -Raiza Ossandón
 -Fabian Justo
+-Ignacio Mamáni
