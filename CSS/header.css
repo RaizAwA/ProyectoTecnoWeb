@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../Media/PageWallpaper.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header {
+    background: #00286e90;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: FjallaOne;
+
+}
+
+.menu_izquierda {
+    list-style: none;
+    flex-direction: row;
+}
+
+.menu_izquierda li {
+    flex-direction: row;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu_izquierda li a {
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    padding: 22px;
+}
+
+.menu_izquierda li a:hover {
+    background: #25007A;
+}
+
+.menu_derecha li a:hover {
+    background: #25007A;
+}
+
+.barra_izquierda, .barra_derecha{
+    margin: 0;
+    flex: 1;
+}
+.logo_center {
+    flex: 1;
+    text-align: center;
+}
+
+.menu_derecha {
+    list-style: none;
+    text-align: end;
+    display: flex;
+    flex-direction: row-reverse;
+    backdrop-filter: 0;
+    opacity: .5;
+    gap: 5px;
+}
+
+.menu_derecha li {
+    text-align: end;
+    flex-direction: row;
+    display: inline-block;
+}
+
+.menu_derecha li a {
+    text-decoration: none;
+    display: block;
+    padding: 14px 7px;
+}

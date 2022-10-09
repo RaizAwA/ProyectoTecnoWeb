@@ -1,0 +1,32 @@
+.catalogo{
+    margin: 1rem 0;
+    background-color: antiquewhite;
+    display: flex;
+    gap: 1rem;
+}
+.fondo-image{
+    background-image: url("/images/bg-bigpixels.webp");
+}
+.image-producto{
+    transition: transform .2s;
+    width: 200px;
+}
+.image-producto:hover{
+    transform: scale(1.1);
+}
+.producto{
+    text-align: center;
+    border: 1px solid #000;
+    height: 350px;
+}
+.button{
+    border: 1px solid #000;
+    color: #000;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: rgb(73, 73, 73);
+    color: #fff;
+}
