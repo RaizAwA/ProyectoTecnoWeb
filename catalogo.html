@@ -14,7 +14,6 @@
             <ul class = "menu_izquierda" >
                 <li><a href="about.html">Nosotros </a></li>
                 <li><a href="#">Contacto </a></li>
-                <li><a href="gamepublish.html">Publicar </a></li>
                 <li><a href="catalogo.html">Catalogo</a></li>
             </ul>
         </div>
@@ -34,44 +33,297 @@
         </div>
         
     </header>
-    <!-- AQUI VA EL NAV -->
-    <div class="header_catalogo">
-        <h4>¿Buscas algun producto en particular?</h4>
-        <form action="catalogo.html" method="get">
-            <input type="text" id="buscador" name="buscador" placeholder="Nombre de producto a buscar">
-            <button type="submit">🍳</button>
-        </form>
+    
+    <div class="cuerpo">
+        <div class="filtros">
+            <div class="header_filtro">
+                <h2>¿Buscas algun producto en particular?</h2>
+                <form action="catalogo.html" method="get">
+                    <input type="text" id="buscador" name="buscador" placeholder="Nombre de producto">
+                    <button type="submit">🍳</button>
+                </form>
+            </div>
+            <div class="item-filtro">
+                <h2>Busca productos por categorias</h2>
+                <form action="catalogo.html" method="get">
+                    <label>
+                        <input type="radio" name="category" id="" value="franquicia">Franquicia
+                    </label><br>
+                    <label>
+                        <input type="radio" name="category" id="" value="tipo_mercancia">Tipo de mercancia
+                    </label><br>
+                    <label>
+                        <input type="radio" name="category" id="" value="precio">Precio
+                    </label><br>
+                    <div id="opciones">
+                        <fieldset>
+                            <div id="franquicia" hidden>
+                                <label>
+                                    <input type="checkbox" name="category_op" value="franquicia1">Franquicia 1
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="category_op" value="franquicia2">Franquicia 1
+                                </label><br>
+                            </div>
+                            <div id="tipo_mercancia" hidden>
+                                <label>
+                                    <input type="checkbox" name="tipo_op" value="peluche">Peluche
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="tipo_op" value="ropa">Ropa
+                                </label><br>
+                            </div>
+                            <div id="precio" hidden>
+                                <label>
+                                    <input type="checkbox" name="precio_op" value=">>N">Mayor que N
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="precio_op" value=">N">Menor que N
+                                </label><br>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit">🍳</button>
+                </form>
+            </div>
+        </div>
+    <!--CATALOGO-->
+        <div class="catalogo">
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/notaboveme.webp" alt="notaboveme" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Not Above Me</h4>
+                <p class="descripcion">A celeste Badeline t-shirt</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/hollowKnight.webp" alt="jolou nai" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Hollow Knight</h4>
+                <p class="descripcion">Hollow Knight physical edition</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/cornifer.webp" alt="cornifer" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Cornifer plush</h4>
+                <p class="descripcion">A Cornifer plushie</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/hornet.webp" alt="hornet" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Hornet figure</h4>
+                <p class="descripcion">A hornet figure</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/lancer.webp" alt="lancer" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Lancer pin</h4>
+                <p class="descripcion">A Lancer pin</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/nikoplush.webp" alt="nikoplush" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Niko plush</h4>
+                <p class="descripcion">A Niko plushie</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/omori.webp" alt="omori" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Omori</h4>
+                <p class="descripcion">Omori physical edition</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/celeste.webp" alt="celeste" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Celeste pin</h4>
+                <p class="descripcion">A Badeline pin</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/ori.webp" alt="ori" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Ori t-shirt</h4>
+                <p class="descripcion">An Ori and the Will <br> of the Wisp t-shirt</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/kuplush.webp" alt="ku" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Ku plush</h4>
+                <p class="descripcion">A Ku plushie</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/nikoposter.webp" alt="nikoposter" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Niko poster</h4>
+                <p class="descripcion">A Oneshot poster</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/hkjournal.webp" alt="hkjournal" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">HK hunter's journal</h4>
+                <p class="descripcion">A Hollow knight artbook</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <img src="images/solstice.webp" alt="solstice" class="image-producto">
+                </div>
+                <h4 class="tit_prod">Solstice pins</h4>
+                <p class="descripcion">Oneshot solstice pins</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/monsterhunter.webp" alt="monsterhunter" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">MH pins</h4>
+                <p class="descripcion">Monster Hunter pins</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/rathalos.webp" alt="rathalos" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Rathalos hoodie</h4>
+                <p class="descripcion">A rathalos hoodie</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/MH.webp" alt="MH" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">MH cats</h4>
+                <p class="descripcion">A Monster Hunter t-shirt</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/oripines.webp" alt="oripines" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Ori pins</h4>
+                <p class="descripcion">Ori and the blind forest pins</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/deltarune1.webp" alt="deltarune1" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Deltarune ch.1 poster</h4>
+                <p class="descripcion">A chapter 1 deltarune poster</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/deltarune2.webp" alt="deltarune2" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Deltarune ch.2 poster</h4>
+                <p class="descripcion">A chapter 2 deltarune poster</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/floralsei.webp" alt="floralsei" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">Floralsei</h4>
+                <p class="descripcion">A ralsei t-shirt</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="producto">
+                <div class="fondo-image">
+                    <a href="#">
+                        <img src="images/worldmachine.webp" alt="worldmachine" class="image-producto">
+                    </a>
+                </div>
+                <h4 class="tit_prod">World machine</h4>
+                <p class="descripcion">A World machine jacket</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+        </div>
+
+       
+
+        <!--FIN CATALOGO-->
     </div>
-    <div class="catalogo">
-        <div class="producto">
-            <div class="fondo-image">
-                <a href="#">
-                    <img src="images/fifa.jpg" alt="jolou nai" class="image-producto">
-                </a>
-            </div>
-            <h4 class="tit_prod">FOFAS</h4>
-            <p class="descripcion">EXPLICACION LOL</p>
-            <a href="#" class="button">Comprar</a>
+    <footer class="footer">
+        <div class= "barra_derecha">
+            <ul class = "menu_derecha" >
+                <li>
+                    <a href="https://www.twitter.com/gabrielboric">
+                        <img src="images/twistter.png" alt="Logo" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/gabrielboric">
+                        <img src="images/ig.png" alt="Logo" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/gabrielboric">
+                        <img src="images/caraLibro.png" alt="Logo" width="30" height="30">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="producto">
-            <div class="fondo-image">
-                <a href="#">
-                    <img src="images/hollowKnight.webp" alt="fofas" class="image-producto">
-                </a>
-            </div>
-            <h4 class="tit_prod">JOLOU NAI</h4>
-            <p class="descripcion">EXPLICACION LOL</p>
-            <a href="#" class="button">Comprar</a>
-        </div>
-        <div class="producto">
-            <div class="fondo-image">
-                <img src="images/lancer.webp" alt="lancer" class="image-producto">
-            </div>
-            <h4 class="tit_prod">ESTA VA PAL LEONEL</h4>
-            <p class="descripcion">KEK</p>
-            <a href="#" class="button">Comprar</a>
-        </div>
-    </div>
+    </footer>
     <script src="JS/buscador.js"></script>
 </body>
 </html>

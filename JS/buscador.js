@@ -12,3 +12,27 @@ if(urlParams.has('buscador')){
         }
     })
 }
+
+const action = (elem, text) => {
+    let radios = elem.querySelectorAll('input[type="checkbox"]');
+    radios.forEach((radio) => {
+        radio.checked = false;
+    })
+    
+    let divs = elem.querySelectorAll('div');
+    divs.forEach((div) => {
+        if(div.id == text){
+            div.hidden = false;
+        }else{
+            div.hidden = true;
+        }
+    })
+};
+
+const radios = document.querySelectorAll('input[name="category"]');
+radios.forEach((radio) =>{
+    radio.addEventListener('click', () => {
+        let opciones = document.getElementById('opciones');
+        action(opciones, radio.value);
+    });
+})

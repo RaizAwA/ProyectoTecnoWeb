@@ -86,5 +86,6 @@ header {
 }
 
 .footer {
-    background-color: #002462b3;
+    background-color: var(--color-principal);
+    justify-content: flex-end;
 }
