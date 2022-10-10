@@ -1,22 +1,29 @@
+:root{
+    /* --color-principal: #0040aeb3; */
+    --color-principal: #000000b3;
+    --color-secundario: #7a4053dc;
+    --color-hover: #424242;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: FjallaOne;
 }
 
 body {
-    background: url("../Media/PageWallpaper.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/images/background.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 header {
-    background: #00286e90;
+    background: var(--color-principal);
     width: 100%;
     display: flex;
     align-items: center;
-    font-family: FjallaOne;
 
 }
 
@@ -39,11 +46,11 @@ header {
 }
 
 .menu_izquierda li a:hover {
-    background: #25007A;
+    background: var(--color-hover);
 }
 
 .menu_derecha li a:hover {
-    background: #25007A;
+    background: var(--color-hover);
 }
 
 .barra_izquierda, .barra_derecha{
@@ -60,8 +67,8 @@ header {
     text-align: end;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     backdrop-filter: 0;
-    opacity: .5;
     gap: 5px;
 }
 
@@ -72,7 +79,12 @@ header {
 }
 
 .menu_derecha li a {
+    color:#fff;
     text-decoration: none;
     display: block;
-    padding: 14px 7px;
+    padding: 22px; 
+}
+
+.footer {
+    background-color: #002462b3;
 }

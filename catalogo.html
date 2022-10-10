@@ -5,11 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/catalogo.css">
+    <link rel="stylesheet" href="CSS/header.css">
     <title>Catalogo</title>
 </head>
 <body>
+    <header>
+        <div class ="barra_izquierda">
+            <ul class = "menu_izquierda" >
+                <li><a href="about.html">Nosotros </a></li>
+                <li><a href="#">Contacto </a></li>
+                <li><a href="gamepublish.html">Publicar </a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+            </ul>
+        </div>
+
+        <div class = "logo_center">
+            <a href="/">
+                <img src="images/logo.png" alt="Logo" width="50" height="50">
+            </a>
+        </div>
+
+        <div class= "barra_derecha">
+            <ul class = "menu_derecha" >
+                <li>
+                    <a href="login.html">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
     <!-- AQUI VA EL NAV -->
-    <a href="/" class="button">Index</a>
+    <div class="header_catalogo">
+        <h4>¿Buscas algun producto en particular?</h4>
+        <form action="catalogo.html" method="get">
+            <input type="text" id="buscador" name="buscador" placeholder="Nombre de producto a buscar">
+            <button type="submit">🍳</button>
+        </form>
+    </div>
     <div class="catalogo">
         <div class="producto">
             <div class="fondo-image">
@@ -40,5 +72,6 @@
             <a href="#" class="button">Comprar</a>
         </div>
     </div>
+    <script src="JS/buscador.js"></script>
 </body>
 </html>

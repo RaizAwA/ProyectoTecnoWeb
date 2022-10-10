@@ -1,0 +1,28 @@
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.form{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secundario);
+    border: 2px solid rgb(71, 54, 54);
+    padding: 1rem;
+    width: 300px;
+}
+.form button{
+    font-size: 20px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.campo input{
+    font-size: 20px;
+}
